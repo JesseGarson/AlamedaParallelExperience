@@ -1,6 +1,4 @@
 body {
-	background-image:url('sky2.jpg');
-	background-repeat:repeat-x;
 	background-color: #eeeeee; /* 8dd6ff 3080b4*/
 	margin:0px 40px 40px 40px;
 }
@@ -50,57 +48,6 @@ width:960px;
 position:absolute; left:0px; top:0px;
 }
 
-.navlong {
-float:left;
-margin: 0 auto;
-height:90px;
-width:820;
-position: relative; left:140px; top:0px;
-font-family: 'Lato', sans-serif;
-font-size: 1em;
-font-weight: 300;
-}
-
-.navicon-sci {height:90px; position:absolute; left:-32px; top:0px; z-index:1;}
-.navicon-aye {width:90px;  position:absolute; left:0px; top:-36px; z-index:1;}
-.navicon-eye {height:90px; position:absolute; left:45px; top:0px; z-index:1;}
-.navicon-vid {width:90px;  position:absolute; left:0px; top:45px;z-index:1;}
-
-.navicon-sci:hover, .navicon-sci-on {height:90px; position:absolute; left:-42px; top:0px; z-index:2;}
-.navicon-aye:hover, .navicon-aye-on {width:90px;  position:absolute; left:0px; top:-46px; z-index:2;}
-.navicon-eye:hover, .navicon-eye-on {height:90px; position:absolute; left:55px; top:0px; z-index:2;}
-.navicon-vid:hover, .navicon-vid-on {width:90px;  position:absolute; left:0px; top:55px; z-index:2;}
-
-.navicon {width:32; vertical-align:middle; padding: 0px 5px 0px 30px;}
-
-.triangle {width:32; vertical-align:bottom; padding: 0px 5px 0px 8px; position: relative; left:180px; top:-16px;}
-
-.navbutton {
-float:left;
-width:140px;
-background-color: #F2A088;
-opacity:1.0;
-padding: 10px 10px 10px 10px;
-border-radius: 0px 0px 0px 0px;
-/*box-shadow: inset 5px -5px 10px rgba(0,0,0,0.1);*/
-}
-
-.navbutton:hover, .navbuttoncurrent:hover {background-color: #c1deea;}
-
-
-.navbuttoncurrent {
-float:left;
-width:140px;
-background-color: #ffffff;
-padding: 10px 10px 10px 10px;
-border-radius: 0px 0px 0px 0px;
-}
-
-.navexplan {width:600px;  position:absolute; left:100px; top:-40px; z-index:2;}
-
-.currentpage {background-color: #6cbf4a; }
-
-
 .bodydiv {
   float:left;
   width:100%;
@@ -136,48 +83,10 @@ color: #ffffff;
 padding: 10px 10px 10px 10px;
 }
 
-/*==================================================
- * paulund shadow effect
- * ===============================================*/
-.effect2
-{
-  position: relative;
-}
-.effect2:before, .effect2:after
-{
-  z-index:-1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width:300px;
-  background: #777;
-  -webkit-box-shadow: 0 15px 10px #444444;
-  -moz-box-shadow: 0 15px 10px #444444;
-  box-shadow: 0 15px 10px #444444;
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-  -o-transform: rotate(-3deg);
-  -ms-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-}
-.effect2:after
-{
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-  -o-transform: rotate(3deg);
-  -ms-transform: rotate(3deg);
-  transform: rotate(3deg);
-  right: 10px;
-  left: auto;
-}
-
-a:link {color:#000000; text-decoration: none;}      /* unvisited link */
-a:visited {color:#000000; text-decoration: none;}  /* visited link */
-a:hover {color:#3080b4; text-decoration: none;}  /* mouse over link */
-a:active {color:#000000; text-decoration: none;}  /* selected link */
+a:link {color:#000000; text-decoration: none;}     /* unvisited link  */
+a:visited {color:#000000; text-decoration: none;}  /* visited link    */
+a:hover {color:#3080b4; text-decoration: none;}    /* mouse over link */
+a:active {color:#000000; text-decoration: none;}   /* selected link   */
 
 .navlong a:hover {color:#ffffff; text-decoration: none;}
 
