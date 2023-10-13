@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="awcpaeStyle.css">
 <script>
    function increaseFontSize() {
-      let currentSize = parseFloat(window.getComputedStyle(document.getElementById('address-text')).fontSize);
-       document.getElementById('address-text').style.fontSize = (currentSize + 1) + "px";
+      let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+       document.getElementById('audio-text').style.fontSize = (currentSize + 1) + "px";
     }
 
    function decreaseFontSize() {
@@ -19,6 +19,7 @@
 </script>
 </head>
 <body>
+<div id="audio-text">
 <h1>Alameda Watershed Center Parallel Audio Experience - <br>Perspectives on the Watershed</h1>
 <p>2 minutes 32 seconds</p>
 <audio controls>
@@ -49,5 +50,6 @@ That's why watershed management strategies, like erosion control and conservatio
 </p><p>
 <a href="PEXP-exhibits.html">Other Exhibits</a>
 </p>
+</div>
 </body>
 </html>
