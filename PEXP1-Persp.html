@@ -7,30 +7,38 @@
     <title>Alameda Watershed Center Parallel Audio Experience</title>
 <link rel="stylesheet" href="awcpaeStyle.css">
 <script>
-   function increaseFontSize() {
-      let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
-       document.getElementById('audio-text').style.fontSize = (currentSize + 1) + "px";
-    }
+	function increaseFontSize() {
+		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+		document.getElementById('audio-text').style.fontSize = (currentSize + 1) + "px";
+	}
 
-   function decreaseFontSize() {
-      let currentSize = parseFloat(window.getComputedStyle(document.getElementById('address-text')).fontSize);
-       document.getElementById('audio-text').style.fontSize = (currentSize - 1) + "px";
-   }
+	function decreaseFontSize() {
+		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+		document.getElementById('audio-text').style.fontSize = (currentSize - 1) + "px";
+	}
+	function togglePlay() {
+		var siteAudio = document.getElementById("siteAudio");
+		return siteAudio.paused ? siteAudio.play() : siteAudio.pause();
+	};
 </script>
 </head>
 <body>
 <p></p>
-  <div class="control-buttons">
-    <button onclick="increaseFontSize()">Increase Font Size</button>
-    <button onclick="decreaseFontSize()">Decrease Font Size</button>
-  </div>
-<p></p>
-<div id="audio-text">
+<div class="control-buttons">
+	<button onclick="increaseFontSize()">Bigger Text</button>
+	<button onclick="decreaseFontSize()">Smaller Text</button><br>
+	<input class="play-button" type="button" value="Play" onclick="togglePlay()" /><br>
+	<audio id="siteAudio" controls>
+		<source src="Parallel1-Perspectives.mp3" type="audio/MP3" />
+		Your browser does not support the audio element.
+	</audio>
+</div>
+<p>
 <h1>Alameda Watershed Center Parallel Audio Experience - <br>Perspectives on the Watershed</h1>
-<p>2 minutes 32 seconds</p>
-<audio controls>
-  <source src="Parallel1-Perspectives.mp3" type="audio/MP3" />
-</audio>
+</p>
+
+<!-- <p id="description">2 minutes 32 seconds</p> -->
+<div id="audio-text" aria-hidden="true">
 <p>
 Let’s take a journey through the mosaic of habitats that make up the Alameda Creek Watershed.
 </p><p>
