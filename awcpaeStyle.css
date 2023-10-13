@@ -41,7 +41,8 @@ width:280px;
 	padding: 10px 10px;
 	font-size: 1.2em;
 	cursor: pointer;
-	margin: 0px 0px;  /* padding above and below */
+	margin-right: 10px;
+ 	margin-left: 10px;
 	border: none;
 	border-radius: 15px;
 	display: inline-block;
