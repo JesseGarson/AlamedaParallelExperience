@@ -21,7 +21,10 @@ clear:both;
 
 .logo {
 width:280px;
+}
 
+.control-buttons {
+margin-bottom: 30px;
 }
 
 .navigation {
@@ -35,42 +38,11 @@ font-family:"Sans-serif",Helvetica;
 font-size:1.2em;
 }
 
-.navsci {background-color: #6cbf4a;}
-.navaye {background-color: #d6005e;}
-.naveye {background-color: #6ac7d6;}
-.navvid {background-color: #f5c06c;}
-
-.navslice {
-float:left;
-margin: 0 auto;
-height:90px;
-width:960px;
-position:absolute; left:0px; top:0px;
-}
-
 .bodydiv {
   float:left;
   width:100%;
   margin: 0 auto;
   background-color: #ffffff;
-}
-
-.gallerybig {
-  float:left;
-  background-color: #ffffff;
-  margin: 50px 0px 0px 50px;
-  z-index:1;
-  border:1px solid #000000;
-}
-
-.gallerybigtag {
-  float:left;
-  width:350px;
-  margin: 50px 0px 0px 10px;
-}
-
-.bigpic {
-border:0;
 }
 
 .footer {
@@ -143,31 +115,12 @@ margin:0;
 padding:0;
 }
 
-#poem {color:#000000;
-font-family: "Libre Franklin",sans-serif;
-font-size: 1em;
-font-weight: 300;
-margin:0;
-padding:0;
-line-height:200%;
-}
-
 #tags {color:#000000;
 font-family: "Libre Franklin",sans-serif;
 font-style: italic;
 font-size: 1em;
 font-weight: 300;
 margin:8px 0px 0px 0px;
-padding:0;
-}
-
-.navexplan p {
-color:#000000;
-text-shadow: 0 0 1.0em #ffffff;
-font-family: "Libre Franklin",sans-serif;
-font-size: .75em;
-font-weight: 700;
-margin:5;
 padding:0;
 }
 </style>
