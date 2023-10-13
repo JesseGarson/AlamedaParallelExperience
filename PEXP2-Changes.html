@@ -1,18 +1,58 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Alameda Watershed Center Parallel Audio Experience</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alameda Watershed Center Parallel Audio Experience</title>
 <link rel="stylesheet" href="awcpaeStyle.css">
+<script>
+	function increaseFontSize() {
+		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+		document.getElementById('audio-text').style.fontSize = (currentSize + 1) + "px";
+	}
+
+	function decreaseFontSize() {
+		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+		document.getElementById('audio-text').style.fontSize = (currentSize - 1) + "px";
+	}
+	function togglePlay() {
+		var siteAudio = document.getElementById("siteAudio");
+		return siteAudio.paused ? siteAudio.play() : siteAudio.pause();
+	};
+</script>
 </head>
 <body>
-<img src="scm_logo.png" class="logo" alt="San Francisco Water Power Sewer. Services of the San Francisco Public Utilities Commission.">
 <p></p>
-<h1>Alameda Watershed Center Parallel Audio Experience - <br>Changes to the Valley</h1>
-<p>1 minute 52 seconds</p>
-<audio controls>
-  <source src="Parallel2-Changes.mp3" type="audio/MP3" />
-</audio>
-<p></p>
-<a href="PEXP-exhibits.html">Other Exhibits</a>
+<div class="control-buttons">
+	<button onclick="increaseFontSize()">Bigger Text</button>
+	<button onclick="decreaseFontSize()">Smaller Text</button><br>
+	<input class="play-button" type="button" value="Play" onclick="togglePlay()" /><br>
+	<audio id="siteAudio" controls>
+		<source src="Parallel2-Changes.mp3" type="audio/MP3" />
+		Your browser does not support the audio element.
+	</audio>
+</div>
+<p>
+<h1>Changes to the Valley</h1>
+</p>
+<div id="audio-text" aria-hidden="true">
+<p>
 
+Centuries ago, the Ohlone people shaped this land using strategic fires to control vast areas of growth, regenerate grasses, and improve hunting conditions.
+</p><p>
+But around 1770, with the arrival of Spanish missions, ranching became the dominant industry. This forever altered the land and displacing the Ohlone from their ancestral homes.
+</p><p>
+The 1850’s Gold Rush brought a surge of settlers to the Bay Area, leading to a booming agricultural industry. Waterways like Alameda Creek and the bay became vital for transporting crops to market.
+</p><p>
+The first rail services in 1869 further expanded the agricultural industry, allowing farmers to efficiently transport perishable crops to destinations beyond San Francisco.
+</p><p>
+Agriculture also drove an increasing demand for water, leading to several significant engineering projects. The Spring Valley Water Company completed the Sunol Aqueduct in 1900. 10 years laters saw the completion of the Sunol Water Temple, and in 1925 the first Calaveras Dam. As these landmarks emerged each one showcased remarkable engineering achievements for its day.
+</p><p>
+Today, much of the 660 square-mile Alameda Creek Watershed retains its natural beauty as undeveloped land. Some of the land has been converted to housing and other uses, but much of it is still used for ranching and farming. The San Francisco Public Utility Commission owns and protects over 38,000 acres here.
+</p><p>
+<a href="PEXP-exhibits.html">Other Exhibits</a>
+</p>
+</div>
 </body>
 </html>
