@@ -9,12 +9,12 @@
 <script>
 	function increaseFontSize() {
 		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
-		document.getElementById('audio-text').style.fontSize = (currentSize + 1) + "px";
+		document.getElementById('audio-text').style.fontSize = (currentSize + 5) + "px";
 	}
 
 	function decreaseFontSize() {
 		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
-		document.getElementById('audio-text').style.fontSize = (currentSize - 1) + "px";
+		document.getElementById('audio-text').style.fontSize = (currentSize - 5) + "px";
 	}
 	function togglePlay() {
 		var siteAudio = document.getElementById("siteAudio");
