@@ -14,23 +14,23 @@
 
    function decreaseFontSize() {
       let currentSize = parseFloat(window.getComputedStyle(document.getElementById('address-text')).fontSize);
-       document.getElementById('address-text').style.fontSize = (currentSize - 1) + "px";
+       document.getElementById('audio-text').style.fontSize = (currentSize - 1) + "px";
    }
 </script>
 </head>
 <body>
+<p></p>
+  <div class="control-buttons">
+    <button onclick="increaseFontSize()">Increase Font Size</button>
+    <button onclick="decreaseFontSize()">Decrease Font Size</button>
+  </div>
+<p></p>
 <div id="audio-text">
 <h1>Alameda Watershed Center Parallel Audio Experience - <br>Perspectives on the Watershed</h1>
 <p>2 minutes 32 seconds</p>
 <audio controls>
   <source src="Parallel1-Perspectives.mp3" type="audio/MP3" />
 </audio>
-<p></p>
-    <div class="control-buttons">
-        <button onclick="increaseFontSize()">Increase Font Size</button>
-        <button onclick="decreaseFontSize()">Decrease Font Size</button>
-    </div>
-<p></p>
 <p>
 Let’s take a journey through the mosaic of habitats that make up the Alameda Creek Watershed.
 </p><p>
