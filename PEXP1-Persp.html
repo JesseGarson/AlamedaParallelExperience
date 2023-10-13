@@ -23,19 +23,18 @@
 </script>
 </head>
 <body>
-<p></p>
-<div class="control-buttons">
-	<button onclick="increaseFontSize()">Bigger Text</button>
-	<button onclick="decreaseFontSize()">Smaller Text</button><br>
+<p>
+<h1>Perspectives on the Watershed</h1>
+</p>
+<div class="control-div">
 	<input class="play-button" type="button" value="Play" onclick="togglePlay()" /><br>
 	<audio id="siteAudio" controls>
 		<source src="Parallel1-Perspectives.mp3" type="audio/MP3" />
 		Your browser does not support the audio element.
-	</audio>
+	</audio><p></p>
+	<button class="control-buttons" onclick="increaseFontSize()">Bigger Text</button>
+	<button class="control-buttons" onclick="decreaseFontSize()">Smaller Text</button><br>
 </div>
-<p>
-<h1>Alameda Watershed Center Parallel Audio Experience - <br>Perspectives on the Watershed</h1>
-</p>
 
 <!-- <p id="description">2 minutes 32 seconds</p> -->
 <div id="audio-text" aria-hidden="true">
