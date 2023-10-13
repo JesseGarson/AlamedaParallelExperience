@@ -1,19 +1,64 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Alameda Watershed Center Parallel Audio Experience</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alameda Watershed Center Parallel Audio Experience</title>
 <link rel="stylesheet" href="awcpaeStyle.css">
+<script>
+	function increaseFontSize() {
+		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+		document.getElementById('audio-text').style.fontSize = (currentSize + 1) + "px";
+	}
+
+	function decreaseFontSize() {
+		let currentSize = parseFloat(window.getComputedStyle(document.getElementById('audio-text')).fontSize);
+		document.getElementById('audio-text').style.fontSize = (currentSize - 1) + "px";
+	}
+	function togglePlay() {
+		var siteAudio = document.getElementById("siteAudio");
+		return siteAudio.paused ? siteAudio.play() : siteAudio.pause();
+	};
+</script>
 </head>
 <body>
-<img src="scm_logo.png" class="logo" alt="San Francisco Water Power Sewer. Services of the San Francisco Public Utilities Commission.">
 <p></p>
-<h1>Alameda Watershed Center Parallel Audio Experience - <br>
-Calaveras Dam Today</h1>
-<p>2 minutes 2 seconds</p>
-<audio controls>
-  <source src="Parallel3-Dam.mp3" type="audio/MP3" />
-</audio>
-<p></p>
-<a href="PEXP-exhibits.html">Other Exhibits</a>
+<div class="control-buttons">
+	<button onclick="increaseFontSize()">Bigger Text</button>
+	<button onclick="decreaseFontSize()">Smaller Text</button><br>
+	<input class="play-button" type="button" value="Play" onclick="togglePlay()" /><br>
+	<audio id="siteAudio" controls>
+		<source src="Parallel3-Dam.mp3" type="audio/MP3" />
+		Your browser does not support the audio element.
+	</audio>
+</div>
+<p>
+<h1>Calaveras Dam Today</h1>
+</p>
+<div id="audio-text" aria-hidden="true">
+<p>
 
+Lets take a whirlwind tour through time and space, and into the heart of one of California's engineering marvels, the impressive Calaveras Dam.
+</p><p>
+Imagine the sounds of the 1900s when the original Calaveras Dam and Reservoir were constructed. At 230 feet, it stood as the highest earth- fill dam in the world
+</p><p>
+Water flows into Calaveras Reservoir from three sources:  Calaveras Creek, Arroyo Hondo, and water diverted from upper Alameda Creek diversion dam. More on that in a moment.
+</p><p>
+Prior to the 1960’s water made it way from the reservoir to the city through remarkable conduit known as the Niles Canyon Aqueduct. A vital lifeline in it’s day, now lies overgrown and almost forgotten,
+</p><p>
+Today, water flows swiftly and efficiently through the modern Hetch Hetchy Aqueduct, delivering an essential supply to communities across the region.
+</p><p>
+Do you hear that sound? You would if you were a steelhead making your way past the diversion dam through the fish ladder.
+</p><p>
+A fish ladder is a unique system designed to assist fish in navigating and overcoming obstaclesduring their upstream migration.
+</p><p>
+Adult steelhead navigate a 32-foot climb, alternating between swimming, jumping and resting in a series of cascades and pools. It's a remarkable journey of resilience and determination that can take a day or more to reach the top, granting them access to spawning grounds for nest- building and egg-laying.
+</p><p>
+The fish ladder, dam and reservoir system stand as a harmonious convergence of human engineering and the resilience of nature.
+</p><p>
+<a href="PEXP-exhibits.html">Other Exhibits</a>
+</p>
+</div>
 </body>
 </html>
